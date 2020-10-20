@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="8dp"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_chore"
+        android:ems="10"
+        android:layout_marginTop="36dp"
+        android:id="@+id/popEnterChore"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textPersonName"
+        android:hint="@string/assignedBy"
+        android:ems="10"
+        android:layout_marginTop="8dp"
+        android:id="@+id/popEnterAssignedBy"
+        app:layout_constraintVertical_bias="0.022"
+        app:layout_constraintTop_toBottomOf="@+id/popEnterAssignedTo"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        android:inputType="textPersonName"
+        android:hint="@string/assignto"
+        android:ems="10"
+        android:layout_marginTop="24dp"
+        android:id="@+id/popEnterAssignedTo"
+        app:layout_constraintTop_toBottomOf="@+id/popEnterChore"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:id="@+id/popSaveChore"
+        app:layout_constraintTop_toBottomOf="@+id/popEnterAssignedBy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:text="@string/save"
+        android:background="@android:color/holo_green_light"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
