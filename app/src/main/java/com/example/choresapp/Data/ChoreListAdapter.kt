@@ -137,7 +137,7 @@ class ChoreListAdapter(private val list: ArrayList<Chore>,
                     dialog!!.dismiss()
 
 //                    startActivity(Intent(this, ChoreListActivity::class.java))
-//                    finish()
+//                   finish()
 
 
                 } else {

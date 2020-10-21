@@ -1,7 +1,14 @@
 package com.example.choresapp.Model
 
+import android.content.Context
 import android.text.format.DateFormat
+import java.text.SimpleDateFormat
 import java.util.*
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.LocalTime
+import java.time.Month
+
 
 class Chore() {
     var choreName: String? = null
@@ -34,10 +41,11 @@ class Chore() {
 
     fun showHumanDate(timeAssigned: Long): String {
 
-        var dateFormat: java.text.DateFormat = DateFormat.getDateFormat(null)
+
+        var dateFormat: java.text.DateFormat =  SimpleDateFormat("MM/dd/yyyy HH:mm")
         var formattedDate: String = dateFormat.format(Date(timeAssigned).time)
 
-        return "Created: ${formattedDate}"
+        return " ${formattedDate}"
 
     }
 
